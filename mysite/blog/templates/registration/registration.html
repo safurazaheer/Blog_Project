@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "blog/base.html" %}
+{% block body_block %}
+
+<div class="container">
+  <h1>Registration</h1>
+{% if registered %}
+  <h2>THANK YOU FOR Registration</h2>
+{% else %}
+  <h2>REGISTER HERE</h2>
+  <h3>Fill out the Form</h3>
+  <form method="POST" novalidate>
+    <!-- enctype="multipart/form-data" for uploading files -->
+    {% csrf_token %}
+    {{ user_form.as_p }}
+  
+    <input type="submit" name="" value="REGISTER">
+  </form>
+{% endif %}
+</div>
+
+
+
+{% endblock %}

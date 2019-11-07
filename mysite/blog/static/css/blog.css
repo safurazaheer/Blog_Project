@@ -1,0 +1,42 @@
+h1{
+  color:red;
+}
+h2{
+  color: red;
+}
+body {
+  background-color: #a3d5d3;
+}
+.techfont{
+  font-family:'Yeon Sung';
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.bigbrand{
+  font-size: 1.5em;
+}
+.centerstage{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postdate{
+  text-align: center;
+}
+
+.posttitle{
+  font-family: 'Yeon Sung';
+  font-size: 3em;
+  text-align: center;
+}
+
+.postcontent{
+  font-family: 'Yeon Sung';
+  font-size: 1.5em;
+}
+
+.btn-comment{
+  position: absolute;
+  right: 0px;
+}
