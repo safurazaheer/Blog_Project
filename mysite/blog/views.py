@@ -22,12 +22,12 @@ class PostListView(ListView):
     def get_queryset(self):
         return Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
 
-#########################33
+
 def register(request):
     registered = False
     if request.method == "POST":
         user_form = UserForm(data=request.POST)
-        #profile_form = UserProfileInfoForm(data=request.POST)
+        
         if user_form.is_valid():
             user = user_form.save()
             user.set_password(user.password)
